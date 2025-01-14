@@ -1,0 +1,536 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DynaPuff:wght@400..700&family=Great+Vibes&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Great+Vibes&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    /* max-width: 1600px; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    /* padding: 0 10px; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-content: space-between; */
+}
+
+.header {
+    background-color: #4b49ac;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-buttons{
+    /* margin-right: 50px; */
+    margin-left: 500px;
+    margin-top: 20px;
+
+    
+}
+.words{
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.header-buttons .btn {
+    /* background-color: #e74c3c; */
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* margin-right:; */
+    font-size: medium;
+}
+
+.header-buttons .btn:hover {
+    background-color: #c0392b;
+}
+/* Set color (when clicked) */
+.header-buttons .btn.set {
+    background-color: #c0392b;
+}
+
+/* Reset color of all buttons except the clicked one */
+.header-buttons .btn:not(.set):hover {
+    background-color: #e74c3c; /* default hover color */
+}
+.hero {
+    /* background-image: url("https://wallpaperaccess.com/full/5487881.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.hero .btn:hover{
+    background-color: #a41e0f;
+}
+
+/* Basic styles for the dot navigation */
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.carousel-dots .dot.active {
+    background-color: #fff;  /* Active dot */
+}
+.Famous-book h2{
+    text-align: center;
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Famous-book img{
+    margin-left: 50px;
+    height: 80vh;
+}
+#animated-pre{
+    /* margin-top: 100px; */
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 40px;
+    width: 100%;
+    font-family: "Caveat", cursive;
+}
+#animated-pre p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.book{
+    display: flex;
+}
+ /* About section  */
+.about {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px; 
+    max-width: 1200px; 
+    padding: 0 20px;
+}
+.about h2 {
+    font-size: 2em;
+    color: #333;
+    margin: 0;
+}
+.about pre {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+    /* font-weight: 700; */
+    font-family: 'Times New Roman', Times, serif;
+}
+.about .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; 
+}
+
+.about .btn:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 768px) {
+    .about .container {
+        flex-direction: column; 
+        text-align: center; 
+    }
+}
+ /* Featured Books Section */
+ .books {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.books .container {
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    padding: 0 20px;
+    gap: 20px;
+}
+.books h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-top: 100px;
+}
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* Space between items */
+    justify-content: center; /* Centers items horizontally */
+}
+.book-item {
+    width: 210px; /*Fixed width for each book item*/
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.book-item:hover {
+    transform: translateY(-20px); /* Lifts the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.book-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.book-item h3 {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0 0;
+}
+@media (max-width: 768px) {
+    .book-item {
+        width: 150px; /* Smaller width on smaller screens */
+    }
+
+    .books h2 {
+        font-size: 2em;
+    }
+}
+/* quotes section */
+.library-quotes {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.library-quotes h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.quote-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    /* max-width: 600px; */
+    padding: 15px;
+    /* border-radius: 8px; */
+    /* background: white; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+}
+
+.quote-item:hover {
+    transform: scale(1.06);
+}
+
+.author-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 90%;
+    margin-right: 20px;
+    /* border: 2px solid #e0e0e0; */
+}
+
+blockquote {
+    font-style: italic;
+    margin: 0;
+    color: #555;
+    font-size: larger;
+}
+
+blockquote p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* feedback-form */
+.feedback {
+    padding: 60px 0;
+    background-color: #f0f4f8;
+}
+
+.feedback .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "quote box";
+    gap: 15px;
+    align-items: start;
+}
+
+.feedback h2 {
+    grid-area: header;
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    animation: bounceIn 1.2s ease-in-out;
+}
+
+.feedback-quote {
+    grid-area: quote;
+    animation: slideDown 1.2s ease;
+}
+
+.feedback-quote pre {
+    font-family: "Dancing Script", cursive;
+    font-size: 24px;
+    color: #555;
+}
+
+.feedback-box {
+    grid-area: box;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.2s ease-in-out;
+    box-sizing: border-box;
+    margin-left: 150px;
+}
+
+.feedback-form {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 35px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    /* width: 100%; */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.10em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    box-sizing: border-box;
+}
+
+.feedback-form .btn {
+    padding: 12px;
+    margin-left: 50px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feedback-form .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.feedback-form .btn:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+    .feedback .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "quote"
+            "box";
+    }
+
+    .feedback h2 {
+        font-size: 2em;
+    }
+}
+
+/* Keyframe Animations */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* footer */
+.footer {
+    background-color: #34495e; /* Vibrant orange */
+}
+
+footer.footer {
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #e9ecef;
+}
+
+footer.footer h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%; /* Ensure it spans the full width */
+}
+
+footer.footer .container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items horizontally */
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-info {
+    text-align: left;
+    font-size: 18px;
+    margin-left: 100px;
+    color: rgb(23, 18, 53);
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.social-icon {
+    font-size: 30px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.social-icon i {
+    transition: transform 0.3s ease;
+}
+
+.social-icon i:hover {
+    transform: scale(1.2);
+}
+
+#no line{
+    text-decoration: none;
+    color: #e9ecef;
+}
